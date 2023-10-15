@@ -5,6 +5,10 @@ let createGrid = (rows, cols) => {
     const gridCell = document.createElement("div");
     gridCell.classList.add("grid-cell");
     gridContainer.appendChild(gridCell);
+
+    gridCell.addEventListener("mouseenter", () => {
+      gridCell.style.backgroundColor = "green";
+    });
   }
 };
 
